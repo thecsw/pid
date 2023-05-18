@@ -5,7 +5,7 @@ Simply put the following at the top of your `main`,
 
 ```
 func main() {
-	defer pid.Start("monokuma").Stop()
+    defer pid.Start("monokuma").Stop()
     // your code...
 }
 ```
