@@ -79,7 +79,7 @@ func Start(name string) interface{ Stop() } {
 
 	// if the file doesn't exist or stale pid deleted, create one and leave this scope
 	if err := os.WriteFile(loc, []byte(rei.Itoa(pid)), 0644); err != nil {
-		panic("writing pid file " + loc + ": " + err.Error())
+		log.Fatalf("writing pid file %s: %v", loc, err)
 	}
 
 	// return the process
