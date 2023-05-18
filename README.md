@@ -33,7 +33,7 @@ I can find the PID of it with (no line feed at the end),
 If I try to start the same program, I will be greeted by
 
 ```
-monokuma:master* λ ./monokuma
+λ ./monokuma
 2023/05/17 23:03:03 your app with pid 91100 is already running
 ```
 
