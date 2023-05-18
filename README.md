@@ -19,7 +19,7 @@ cleaned up.
 As with any go library, get it through `go`,
 
 ```sh
-go get -u -v github.com/thecsw/pid@v0.1.0
+go get -u -v github.com/thecsw/pid@v0.1.1
 ```
 
 The versioning of this is arbitrary, it is not `v1.0.0` because it hasn't been tested

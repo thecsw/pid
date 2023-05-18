@@ -15,17 +15,17 @@ const (
 	pidPath = "/tmp"
 )
 
-// proc is a struct that can be used to stop a process.
 type proc struct {
 	pid int
 	loc string
 }
 
-// Stop stops a process.
+// Stop deletes the pid file session.
 func (p proc) Stop() {
 	// we need to remove the pid file that we created
 	if err := os.Remove(p.loc); err != nil {
-		log.Fatalf("removing pid file %s: %v", p.loc, err)
+		// not fatal, at least log it
+		log.Printf("removing pid file %s: %v\n", p.loc, err)
 	}
 }
 
